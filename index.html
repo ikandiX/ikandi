@@ -22,7 +22,16 @@
 
 				img{
 					max-width: 250px;
+					-webkit-transition: all .3s ;
+		                        -moz-transition: all .3s ;
+                                        -ms-transition: all .3s ;
+                                        -o-transition: all .3s ;
+		                        transition: all .3s ;
+					
 				}
+			
+				.item:hover img {width:120%; margin: 0 0 0 -10%; -webkit-transition: all .3s ;-moz-transition: all .3s ;-ms-transition: all .3s ;-o-transition: all .3s ;transition: all .3s ;}
+
 
 				.nav {
 					background: #fff;
@@ -181,6 +190,7 @@
 				        var idx = indexOfSmallest(columns);
 				        items[i].setAttribute('style', 'width: ' + item_width + 'px; ' +
 				          'position: absolute; ' +
+				          'overflow: hidden; ' +		      
 				          'margin: ' + item_margin / 2 + 'px; ' +
 				          'top: ' + (columns[idx] + item_margin / 2) + 'px; ' +
 				          'left: ' + ((item_width + item_margin) * idx + left) + 'px; ' +
