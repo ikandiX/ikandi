@@ -5,7 +5,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link rel="icon" href="https://ikandix.github.io/ikandi/icon_ikandi.png">
 		<link rel="canonical" href="https://ikandix.github.io/ikandi/">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 		<meta name="robots" content="index, follow">
 		<meta name="trafficjunky-site-verification" content="s73vn2n2t" />
 		<meta name="description" content="Ikandi adult gif gallery">
@@ -58,11 +58,19 @@
 					position: absolute;
 					top: 0;
 					display: block;
-					height: 35px;
+					min-height: 25px;
 					width: 100%;
 					background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0));
 			
 				}
+			
+			        .overlay a {
+				      color:#fff;
+				      margin: 12px;
+				      text-decoration:none;
+				      font-size:12px;
+			
+			        }
 	
 		</style>
 	</head>
@@ -171,7 +179,7 @@
 					id = '' + id;
 				}
 				$('.container .grid').append( 
-					'<div class="item"><div class="overlay"><a class="twitter customer share" href="https://twitter.com/share?url='+url+'&amp;text=Share popup on &amp;hashtags=ikandi" title="Twitter share" target="_blank">Twitter</a><a class="facebook customer share" href="https://www.facebook.com/sharer.php?u='+url+'" title="Facebook share" target="_blank">Facebook</a></div><img src="'+url+'"></div>'
+					'<div class="item"><div class="overlay"><a class="facebook customer share" href="https://www.facebook.com/sharer.php?u='+url+'" title="Facebook share" target="_blank"><i class="far fa-hand-point-up"></i></a></div><img src="'+url+'"></div>'
 					
 					);
 			});
